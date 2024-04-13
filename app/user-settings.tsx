@@ -1,4 +1,6 @@
+
 import Image from "next/image";
+import { signOut } from "./auth/providers";
 
 export function UserSettings({ image }: { image?: string | null | undefined }) {
   return (
@@ -10,7 +12,10 @@ export function UserSettings({ image }: { image?: string | null | undefined }) {
         height={40}
         className="rounded-full" 
       />
-      <form>
+      <form action={async () => {
+        'use server'
+        await signOut()
+      }}>
         <button type="submit" className="hover:underline">Sign out</button>
       </form>
     </div>

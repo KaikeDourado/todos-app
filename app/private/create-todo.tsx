@@ -1,6 +1,7 @@
+import { createTodo } from "#/actions/todos";
 export function TodoForm() {
   return (
-    <form className="w-80 p-6 border roudned-mg bg-violet-50 rounded">
+    <form action={createTodo} className="w-80 p-6 border roudned-mg bg-violet-50 rounded">
       <span>Todo</span>
       <input 
         type="text" 
