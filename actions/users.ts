@@ -13,7 +13,7 @@ const UserSchema = z.object({
         .string({required_error: 'O nome é obrigatório'})
         .min(3, 'O nome deve conter pelo menos 3 caracteres'),
     email: z.string().email('Insira um e-mail válido'),
-    password: z.string().min(6, 'A senha deve conter no minimo 6 caracteres'),
+    password: z.string().min(8, 'A senha deve conter no minimo 8 caracteres'),
     image: z.string(),
     role: z.string()
 })

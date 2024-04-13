@@ -11,7 +11,7 @@ export default async function PrivatePage() {
           Olá <strong>{name}</strong>, seja bem vindo(a) a área privada.
         </h1>
         <pre className = "p-10 bg-gray-900 rounded-md my-10 text-gray-50">{JSON.stringify(session, null, 2)}</pre>
-        <TodoForm />
+        
       </div>
     </main>
   )

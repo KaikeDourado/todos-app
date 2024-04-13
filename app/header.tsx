@@ -4,12 +4,12 @@ import { UserSettings } from "./user-settings";
 
 export async function Header() {
   return (
-    <header className="w-full max-w-3xl mx-auto my-6 px-6 py-8 border rounded-md bg-gray-50">
-      <nav className="w-full max-w-screen-xl mx-auto flex items-center justify-between">
+
+      <nav className="pr-10 pl-10 bg-black text-[#E7C7A1] flex list-none w-full items-center justify-beetween h-24 transition-all ">
         <Logo />
         <Navlinks />
         { <UserSettings />}
       </nav>
-    </header>
+
   )
 }

@@ -16,7 +16,7 @@ export function UserSettings({ image }: { image?: string | null | undefined }) {
         'use server'
         await signOut()
       }}>
-        <button type="submit" className="hover:underline">Sign out</button>
+        <button type="submit" className="hover:underline">Sair </button>
       </form>
     </div>
   )
